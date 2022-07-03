@@ -1,6 +1,6 @@
 {
   "name": "Quartz Daily Digest (Unofficial)",
-  "description": "If you have a Quartz subscription, it sucks to forget about it and not get the full value. This (unofficial) extension brings the daily digest to your new tab page. Stay on top of the latest news by Quartz!",
+  "description": "This (unofficial) extension brings the Quartz daily digest to your new tab page. Stay on top of the latest news by Quartz!",
   "manifest_version": 2,
   "version": "0.0.0.2",
   "permissions": [
