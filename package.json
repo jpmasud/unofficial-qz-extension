@@ -1,0 +1,22 @@
+{
+  "name": "QuartzChromeExtension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start:dev": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@webpack-cli/serve": "^1.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.5.0"
+  }
+}

@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *;">
+    <style>
+
+        #myFakeElement { color:red ; }
+
+        body {
+            background: rgb(23, 26, 35);
+            max-width: 700px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #168dd9;
+        }
+
+        * {
+            color: white;
+            line-height: 30px;
+        }
+
+        .news-item {
+            font-size: 16px;
+            margin: 15px 0;
+            cursor: unset;
+        }
+
+        .read-more {
+            font-size: 16px;
+            padding-bottom: 3px;
+            border-bottom: 0.5px solid rgb(118, 203, 255);
+            cursor: pointer;
+            color: rgb(118, 203, 255);
+        }
+
+        .last-updated {
+            opacity: 0.7;
+            font-size: 12px;
+        }
+
+        .search-input {
+            background-color: #212330;
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
+            height: 65px;
+            width: 100%;
+            min-width: 600px;
+            margin: 0;
+            padding: 15px;
+            border-radius: 50px;
+            border: 0;
+            outline: none;
+        }
+
+        .or-catch-up {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .search-submit-button {
+            display: none;
+        }
+
+        #results {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #results p {
+            margin: 14px 0;
+            line-height: 1.75;
+            font-size: 18px;
+        }
+
+        strong {
+            font-weight: bolder;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="#" />
+    <script type="module" src="dist/main.js"></script>
+</head>
+<body>
+<div id="apps" class="container">
+    <form id=search action="https://www.google.com/search" method="get">
+        <input type="search" name="q" class="search-input" placeholder="Search on Google"/>
+        <input type="submit" class="search-submit-button"/>
+    </form>
+
+    <span class="or-catch-up">Or catch up on Quartz:</span>
+
+    <span class="last-updated">Last updated: <span id="date"></span></span>
+
+    <div id="results"/>
+
+</div>
+</body>
+</html>

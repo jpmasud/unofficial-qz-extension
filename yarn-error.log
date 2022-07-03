@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/Cellar/nvm/0.35.3/versions/node/v10.22.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/opt/nvm/versions/node/v10.22.0/bin:/Users/yousafmasud/exec -l /bin/zsh/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.22.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/yousafmasud/Downloads/QuartzChromeExtension/package.json: Unexpected token } in JSON at position 338
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "QuartzChromeExtension",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack",
+      "start:dev": "webpack serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.21.1",
+    },
+    "devDependencies": {
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0",
+      "webpack-merge": "^5.5.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
